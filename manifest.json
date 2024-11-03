@@ -1,13 +1,15 @@
 {
-    "name": "Fackt",
-    "version": "0.0.1",
     "manifest_version": 3,
+    "name": "FaCKt - Random Facts Generator",
+    "description": "Get interesting random facts with a click!",
+    "version": "1.0",
     "action": {
         "default_popup": "popup.html",
-        "deafault_icon": "fackt_logo.png"
+        "default_icon": {
+            "128": "fackt_logo.png"
+        }
     },
-    "icons":{
-        "128":"fackt_logo.png"
-    },
-    "permissions": ["activeTab"]
+    "host_permissions": [
+        "https://uselessfacts.jsph.pl/*"
+    ]
 }

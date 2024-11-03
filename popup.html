@@ -1,17 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
-        <title>FaCKt</title>
-    </head>
-    <body>
-        <div class="container">
-            <p id="factElement">Getting facts for you...</p>
-            <button id="newFactBtn">New Fact</button>
+<head>
+    <meta charset="UTF-8">
+    <title>Random Facts</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo">
+                <span class="logo-icon">💡</span>
+            </div>
+            <h1 class="title">Random Facts</h1>
+        </header>
+
+        <div class="fact-container" id="factContainer">
+            <div class="fact-header">
+                <h2 class="fact-title">Did you know?</h2>
+                <span class="fact-badge fact-badge-verified">
+                    Random Fact
+                </span>
+            </div>
+            <p class="fact-content" id="factText">
+                Loading an interesting fact...
+            </p>
+            <div class="fact-source">
+                <span>Source: UselessFacts API</span>
+            </div>
         </div>
-        <script src="script.js"></script>
-    </body>
+
+        <button id="newFactBtn" class="button">
+            <span>Get New Fact</span>
+        </button>
+
+        <div id="loading" class="loading" style="display: none;">
+            <div class="loading-spinner"></div>
+        </div>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
 </html>
