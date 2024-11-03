@@ -5,9 +5,8 @@
     "version": "1.0",
     "action": {
         "default_popup": "popup.html",
-        "default_icon": {
-            "128": "fackt_logo.png"
-        }
+        "default_icon": "logo.png"
+
     },
     "host_permissions": [
         "https://uselessfacts.jsph.pl/*"
