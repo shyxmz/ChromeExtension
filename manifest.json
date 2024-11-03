@@ -1,0 +1,13 @@
+{
+    "name": "Fackt",
+    "version": "0.0.1",
+    "manifest_version": 3,
+    "action": {
+        "default_popup": "popup.html",
+        "deafault_icon": "fackt_logo.png"
+    },
+    "icons":{
+        "128":"fackt_logo.png"
+    },
+    "permissions": ["activeTab"]
+}
